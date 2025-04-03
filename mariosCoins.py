@@ -21,7 +21,7 @@ def randCoinList(): # returns random combination of coin indecies
 # What is the probability that the flip shows heads?
 def testSingleFlip(numIter):
   successes = 0
-  for i in range(numIter):
+  for _ in range(numIter):
     if flipCoin(randCoin()):
       successes += 1
   print(f"successes: {successes}")
@@ -34,7 +34,7 @@ def testSingleFlip(numIter):
 # What is the probability that both flips show heads?
 def testDoubleFlip(numIter):
   successes = 0
-  for i in range(numIter):
+  for _ in range(numIter):
     theCoin = randCoin()
     if flipCoin(theCoin):
       if flipCoin(theCoin):
